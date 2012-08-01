@@ -9,6 +9,8 @@ PR = "r0"
 # On systems without CONFIG_UTRACE, this package is empty.
 ALLOW_EMPTY_${PN} = "1"
 
+INHIBIT_PACKAGE_STRIP = "1"
+
 inherit module-base gettext
 
 FILES_${PN} += "${datadir}/systemtap/runtime/uprobes"
